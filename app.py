@@ -18,4 +18,10 @@ def define(word):
 
 word= input("What word would you want to know?\n")
 
-print(define(word))
+output = define(word)
+
+if type(output) == list:
+    for item in output:
+        print(item)
+else:
+    print(output)
